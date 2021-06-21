@@ -1,6 +1,6 @@
 {
   "name": "tineo-core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "10.0.0", 
-    "tineo-ui": "0.0.0"
+    "next": "10.0.0",
+    "tineo-ui": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.8.0",
