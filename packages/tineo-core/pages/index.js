@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <Button onClick={() => setConsole((prevValue => !prevValue))}>Hello, world. Click me, please!</Button>
-      {showConsole && <ActiveConsole title="yaaaay" />}
+      {showConsole && <ActiveConsole title="yaaaah" />}
     </main>
   )
 }
