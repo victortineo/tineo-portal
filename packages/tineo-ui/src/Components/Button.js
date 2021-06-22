@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
-import ActiveConsole from './ActiveConsole';
 
-export default function Button({children}){
-  const [active, setActive] = useState(true)
+export default function Button({children, ...rest}){
   return (
-    <>
-      <btn onClick={() => setActive(!active)}>{children}</btn>
-      {active && <ActiveConsole title="yaaaay" />}
-    </>
+    <button {...rest}>{children}</button>
   )
 }
