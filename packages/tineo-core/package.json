@@ -6,9 +6,9 @@
   "author": "Victor Tineo",
   "scripts": {
     "start": "rollup -c rollup.config.js -w",
-    "dev": "rollup -c rollup.config.js -w",
+    "dev": "rollup -c rollup-dev.config.js -w",
     "build": "rollup -c rollup.config.js",
-    "watch": "rollup -c rollup.config.js -w",
+    "watch": "rollup -c rollup-dev.config.js -w",
     "heroku-postbuild": "rollup -c"
   },
   "peerDependencies": {

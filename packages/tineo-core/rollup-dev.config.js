@@ -23,5 +23,13 @@ export default {
       presets: ["@babel/preset-react"],
     }),
     commonjs(),
+    serve({
+      open: true,
+      verbose: true,
+      contentBase: ["", "public"],
+      host: "localhost",
+      port: 3000,
+    }),
+    livereload({ watch: "dist" }),
   ]
 };

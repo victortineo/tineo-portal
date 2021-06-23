@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --scope tineo-core --include-dependencies -- yarn build",
+    "build": "lerna exec --include-dependencies -- yarn build",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "start": "run-p --print-label package:*"
   },
