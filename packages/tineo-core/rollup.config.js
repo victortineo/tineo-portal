@@ -8,7 +8,7 @@ import replace from '@rollup/plugin-replace';
 export default {
   input: "src/index.js",
   output: {
-    file: "dist/bundle.js",
+    file: "public/dist/bundle.js",
     format: "iife",
     sourcemap: true,
   },
