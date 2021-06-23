@@ -1,16 +1,15 @@
 {
   "name": "tineo-core",
   "version": "1.0.0",
-  "private": true,
+  "description": "",
+  "main": "index.js",
+  "author": "Victor Tineo",
   "scripts": {
-    "dev": "next dev && next export",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "10.0.0",
-    "tineo-ui-components-library": "^1.0.0"
+    "start": "rollup -c rollup.config.js -w",
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js",
+    "watch": "rollup -c rollup.config.js -w",
+    "heroku-postbuild": "rollup -c"
   },
   "peerDependencies": {
     "react": "^16.8.0",
@@ -18,7 +17,15 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
-    "eslint": "7.29.0",
-    "eslint-config-next": "11.0.0"
-  }
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-replace": "^2.4.2",
+    "rollup": "^2.52.2",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-typescript2": "^0.30.0"
+  },
+  "license": "ISC"
 }
