@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "build": "lerna exec --scope tineo-core --include-dependencies -- yarn build",
-    "bootstrap": "lerna bootstrap --use-workspaces"
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "start": "run-p --print-label package:*"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",

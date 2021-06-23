@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "next": "10.0.0",
-    "tineo-ui": "^1.0.0"
+    "tineo-ui-components-library": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.8.0",
