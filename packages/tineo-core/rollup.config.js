@@ -22,21 +22,6 @@ export default {
       presets: ["@babel/preset-react"],
     }),
     commonjs(),
-    html({
-      template({ attributes, bundle, files, publicPath, title }) {
-        return `
-          <html>
-            <head>
-              <meta charset="utf-8">
-              <title>Tineo Portal | Home</title>
-            </head>
-            <body>
-              <script src="${bundle}"></script>
-              <script nomodule src="s.js"></script>
-            </body>
-          </html>
-        `;
-      }
-    })
+    html(),
   ]
 };
