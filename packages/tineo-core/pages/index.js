@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, ActiveConsole } from 'tineo-ui'
+import { Button, ActiveConsole } from 'tineo-ui-components-library'
 
 export default function Home() {
   const [showConsole, setConsole] = useState(false)
